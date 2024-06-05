@@ -16,7 +16,7 @@ jobs:
                 command: poetry run pytest
 
 workflows:
-    main:
+    test:
         jobs:
             - python-tests:
                 filters:
