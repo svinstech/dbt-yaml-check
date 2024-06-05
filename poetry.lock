@@ -178,14 +178,14 @@ files = [
 
 [[package]]
 name = "tabulate"
-version = "0.8.10"
+version = "0.7.7"
 description = "Pretty-print tabular data"
 category = "main"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+python-versions = "*"
 files = [
-    {file = "tabulate-0.8.10-py3-none-any.whl", hash = "sha256:0ba055423dbaa164b9e456abe7920c5e8ed33fcc16f6d1b2f2d152c8e1e8b4fc"},
-    {file = "tabulate-0.8.10.tar.gz", hash = "sha256:6c57f3f3dd7ac2782770155f3adb2db0b1a269637e42f27599925e64b114f519"},
+    {file = "tabulate-0.7.7-py2.py3-none-any.whl", hash = "sha256:1f07f6252b20cdc4ed744b598b5fa8362638988b50a62f3e2ad76c97fc02eef2"},
+    {file = "tabulate-0.7.7.tar.gz", hash = "sha256:83a0b8e17c09f012090a50e1e97ae897300a72b35e0c86c0b53d3bd2ae86d8c6"},
 ]
 
 [package.extras]
@@ -257,4 +257,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.7"
-content-hash = "e1e976f9e66f9dc3b63191a49ea228687793a47987e740afec6c9116b8d642d4"
+content-hash = "9974ea1148f9a391297b055793a4a93be5a4d0cd760ca3dfad2b21a99a802b73"
