@@ -1,0 +1,24 @@
+version: 2.1
+orbs:
+  python: circleci/python@1
+
+
+jobs:
+    python-tests:
+        docker:
+            - image: cimg/python:3.9
+        steps:
+            - checkout
+            - python/install-packages:
+                pkg-manager: poetry
+            - run:
+                name: test
+                command: pytest tests/
+
+workflows:
+    test:
+        jobs:
+            - python-tests:
+                filters:
+                    branches:
+                        ignore: main
