@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  python: circleci/python@1
+  python: circleci/python@1.2.0
 
 
 jobs:
@@ -13,10 +13,10 @@ jobs:
                 pkg-manager: poetry
             - run:
                 name: test
-                command: pytest tests/
+                command: poetry run pytest tests/
 
 workflows:
-    test:
+    main:
         jobs:
             - python-tests:
                 filters:
