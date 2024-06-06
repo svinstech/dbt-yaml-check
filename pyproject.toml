@@ -11,10 +11,10 @@ dbt-yaml-check = "dbt_yaml_check.main:app"
 [tool.poetry.dependencies]
 python = "^3.7"
 typer = {extras = ["all"], version = "^0.4.1"}
-tabulate = "^0.8.9"
+tabulate = "^0.9.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^6.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
